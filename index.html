@@ -8,7 +8,7 @@
         <div class="container">
             <h1>Vending machine simulation</h1>
             <div class="col-md-8 machine" data-bind="foreach: cells">
-                <div class="col-md-4 cell" >
+                <div class="col-md-4 cell" data-bind="click: $parent.select, css: { selected: $parent.selectedCell().product === $data.product, sold: sold }">
                     <div class="col-md-6 image">
                         <img data-bind="attr: { src: product.category.getImageUrl(), alt: product.category.name }"/>
                     </div>
