@@ -5,7 +5,7 @@ class Quarter {
         return this.value;
     }
 
-    getImageUrl (): string {
+    getImageUrl(): string {
         return "img/Quarter.png"
     }
 }
